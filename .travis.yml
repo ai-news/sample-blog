@@ -11,6 +11,6 @@ before_install:
 deploy:
   provider: script
   skip_cleanup: true
-  script: pwd && ls -lash $TRAVIS_BUILD_DIR/ && $encrypted_28f6367d4adc_key && scp $TRAVIS_BUILD_DIR/index.html hoangnm@125.212.227.42:/home/hoangnm/sources/
+  script: pwd && ls -lash $TRAVIS_BUILD_DIR/ && printenv && scp $TRAVIS_BUILD_DIR/index.html hoangnm@125.212.227.42:/home/hoangnm/sources/
   on:
     branch: master
