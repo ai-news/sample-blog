@@ -11,6 +11,6 @@ before_install:
 deploy:
   provider: script
   skip_cleanup: true
-  script: pwd && ls -lash $TRAVIS_BUILD_DIR/ && scp $TRAVIS_BUILD_DIR/index.html hoangnm@125.212.227.42:/home/honagnm/sources/
+  script: pwd && ls -lash $TRAVIS_BUILD_DIR/ && scp $TRAVIS_BUILD_DIR/index.html hoangnm@125.212.227.42:/home/hoangnm/sources/
   on:
     branch: master
